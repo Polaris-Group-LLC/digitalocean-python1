@@ -10,6 +10,16 @@ env/
 .env
 .venv
 pip-debug.log*
+.env*
+*.env
+
+# Config files with secrets
+config.yaml
+config*.yaml
+*.config
+.env.local
+secrets/
+credentials/
 
 # IDE specific files
 .idea/
@@ -17,20 +27,59 @@ pip-debug.log*
 *.swp
 *.swo
 .DS_Store
+*.sublime-*
+.settings/
+.project
+.classpath
 
 # DigitalOcean specific
 .do/
+app.yaml
+deploy.template.yaml
 
 # Distribution / packaging
 dist/
 build/
 *.egg-info/
+*.egg
+MANIFEST
+*.pyc
+__pycache__
+*.pyo
+*.pyd
+.Python
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
 
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.nox/
 .coverage
 .coverage.*
 .cache
+nosetests.xml
 coverage.xml
 *.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Logs
+*.log
+logs/
+log/
+
+# Local development
+*.sqlite3
+*.db
+local_settings.py
