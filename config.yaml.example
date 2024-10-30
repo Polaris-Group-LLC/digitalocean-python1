@@ -1,0 +1,87 @@
+# Example configuration - DO NOT ADD REAL SECRETS HERE
+api_keys:
+  openai: "your-openai-key-here"
+  anthropic: "your-anthropic-key-here"
+
+database:
+  password: "your-password-here" 
+
+model_list:# Example configuration - DO NOT ADD REAL SECRETS HERE
+api_keys:
+  openai: "your-openai-key-here"
+  anthropic: "your-anthropic-key-here"
+
+database:
+  password: "your-password-here" 
+
+model_list:
+  - model_name: gpt-4o
+    litellm_params:
+      model: gpt-4o
+      api_key: ${OPENAI_API_KEY}
+
+  # ... (similar pattern for other OpenAI models)
+
+  - model_name: claude-3-5-sonnet-latest
+    litellm_params:
+      model: claude-3-5-sonnet-20241022
+      api_key: ${ANTHROPIC_API_KEY}
+
+  # ... (similar pattern for other Anthropic models)
+
+  - model_name: perplexity-codellama-34b-instruct
+    litellm_params:
+      model: perplexity/codellama-34b-instruct
+      api_key: ${PERPLEXITY_API_KEY}
+
+  # ... (similar pattern for other Perplexity models)
+
+  - model_name: groq-llama2-70b-4096
+    litellm_params:
+      model: groq/llama2-70b-4096
+      api_key: ${GROQ_API_KEY}
+
+  # ... (similar pattern for other Groq models)
+
+general_settings:
+  database_url: ${DATABASE_URL}
+  master_key: ${LITELLM_MASTER_KEY}
+  admin_ui: true
+  admin_ui_credentials:
+    username: ${UI_USERNAME}
+    password: ${UI_PASSWORD}
+  - model_name: gpt-4o
+    litellm_params:
+      model: gpt-4o
+      api_key: ${OPENAI_API_KEY}
+
+  # ... (similar pattern for other OpenAI models)
+
+  - model_name: claude-3-5-sonnet-latest
+    litellm_params:
+      model: claude-3-5-sonnet-20241022
+      api_key: ${ANTHROPIC_API_KEY}
+
+  # ... (similar pattern for other Anthropic models)
+
+  - model_name: perplexity-codellama-34b-instruct
+    litellm_params:
+      model: perplexity/codellama-34b-instruct
+      api_key: ${PERPLEXITY_API_KEY}
+
+  # ... (similar pattern for other Perplexity models)
+
+  - model_name: groq-llama2-70b-4096
+    litellm_params:
+      model: groq/llama2-70b-4096
+      api_key: ${GROQ_API_KEY}
+
+  # ... (similar pattern for other Groq models)
+
+general_settings:
+  database_url: ${DATABASE_URL}
+  master_key: ${LITELLM_MASTER_KEY}
+  admin_ui: true
+  admin_ui_credentials:
+    username: ${UI_USERNAME}
+    password: ${UI_PASSWORD}

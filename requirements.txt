@@ -1,0 +1,10 @@
+litellm>=1.26.0
+openai==1.41.0
+python-dotenv
+fastapi
+uvicorn
+psycopg2-binary
+pyyaml
+termcolor>=2.4.0
+agency-swarm>=0.3.0
+gunicorn
